@@ -106,6 +106,7 @@ p{
     overflow-y: scroll;
 }
 
+
 img {
     width: 90%;
     height: auto;
@@ -114,7 +115,42 @@ video {
     width: 90%;
     height: auto;
 	}
-
+.fondo{
+	background-image: url(recursos/dollmakerfondo.png);
+	background-size: cover;
+	background-attachment: fixed; 
+	background-position: center;
+	}
+	.cuerpo{
+	background-color: rgba(0,0,10,0.5)  /*color de fondo de sección*/;
+	padding: 1%;
+	margin-left: 10%;
+	margin-right: 10%;
+	}
+	.preguntas {
+	font-family: Dollmaker;
+	color: black;
+	font-size: 30px;
+	margin-left: auto;
+	text-align: center;
+	margin-right: auto;
+	margin-bottom: 3%;
+	background: #edb158 /*color de fondo de preguntas*/;
+	width: 50%;
+	border: 2px solid #edb158 /*color de fondo de preguntas*/;
+	border-radius: 5px;
+	padding: 2px;
+	}
+	.respuestas{
+		
+	font-family: sans-serif ;
+	color: black;
+	font-size: 24px;
+	text-align: center;
+	background: #f5d58c /*color de fondo de contenido*/;
+	width: 100%;
+	padding: 0px;
+	}
 @media (max-width: 1200px){
 	.Metas{
 	width: 750px;
