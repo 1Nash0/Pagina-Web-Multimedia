@@ -1,192 +1,219 @@
-*{
+/*primero quitamos las cosas que vienen por defecto*/
+
+* {
+margin: 10px;
+padding:0;
+box-sizing: border-box;
+text-decoration: none;
+
+}
+
+.home{
+	display:flex;
+}
+img{
+	max-width: 100%;
+}
+
+.container {
+	max-witdh: 1200px;
+	margin: 10 px auto;
+
+}
+
+.header {
 	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	vertical-align: baseline;
+	background-color: #1A1633;
 }
-body{
+
+.menu{
+	display: flex ;
+	justify-content: space-between;
+	align-items: center ;
+	padding: 20px 0;
+	background-color: #1A1633;
+
+}
+
+.logo{
+	margin:-10px;
+	color: #FBE8A5;
+	font-size: 25px;
+	font-weight: 800;
+	text-transform:uppercase;
+	background-image: ;
+}
+
+
+}
+.menu {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-btn {
+  background-color: #FBE8A5;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-items {
+  position: absolute;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #1A1633;
+  display: none;
+  z-index: 1;
+}
+
+.menu-items li {
+  border-bottom: 1px;
+  color: #1A1633;
+}
+
+.menu-items li:last-child {
+  border-bottom: none;
+}
+
+.menu-items li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #FBE8A5
+}
+
+.menu-items li a:hover {
+  background-color: #f1f1f1;
+}
+
+.menu:hover .menu-items {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .menu-btn {
+    display: block;
+  }
+  
+  .menu-items {
+    position: static;
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .menu-items li {
+    border-bottom: none;
+  }
+  
+  .menu:hover .menu-items {
+    display: block;
+  }
+}
+
+
+#menu {
+	display:none;
+}
+
+.menu-icono{
+	width: 25 px;	
+}
+
+.menu label{
+cursor: pointer;	
+}
+
+.header-content{
+	display: flex;
+	justify-content:space- between;
 	text-align: center;
-	font-family: sans-serif;
-	background-color: #F2DDB6;
-}
-.title{
-	margin-top: 35px;
-	margin-bottom: 40px;
-	font-size: 45px;
-	font-weight: 600;
-	text-transform: uppercase;
-	color: #12374c;
-}
-.subtitle{
-	font-family: Dollmaker;
-	margin-top: 25px;
-	margin-bottom: 35px;
-	font-size: 35px;
-	font-weight: 600;
-	text-transform: uppercase;
-	color: #006666;
-}
-p{
-	font-family: Dollmaker;
-	margin-bottom: 35px;
-	font-size: 17px;
-	padding: 0 25px;
-}
-.content2{
-	
-	height: 35vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-.intro{
-		padding: 30px;
-	background: #998fcc;
-	 border: 3px dotted blue;
-	 border-bottom: 0;
-}
-.historia{
-	padding: 30px;
-	background: #99ffcc;
-	 border: 3px dotted blue;
-	 border-bottom: 0;
-}
-.genero{
-	padding: 30px;
-	background: #99ffe6;
-	border: 3px dotted blue;
-	border-bottom: 0;
-	border-top: 0;
-}
-.gameplay{
-	padding: 30px;
-	background: #99b3ff;
-	border: 3px dotted blue;
-	border-top: 0;
-}
-.Meta1{
-	background: #99ffcc;	
-}
-.Meta2{	
-	background: #99ffe6;	
-}
-.Meta3{	
-	background: #99b3ff;	
-}
-.contenedor{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	flex-wrap: wrap;
-}
-.descripción{
-	width: 85%;
-	height: auto;
-}
-.hist{
-	display: flex;
-	flex-direction: row;
-}
-.gen{
-	display: flex;
-	flex-direction: row;
-}
-.gamep{
-	display: flex;
-	flex-direction: row;
-}
-.Metas {	
-	position: sticky;  
-    height: 120vh;
-    padding-bottom: 20px;
-    padding-top: 60px;
-    overflow: hidden;
-    overflow-y: scroll;
+	padding: 80px 0;
 }
 
+.header-txt {
+	flex-basis:0%;
+	padding-right: 80px;
 
-img {
-    width: 90%;
-    height: auto;
-	}
-video {
-    width: 90%;
-    height: auto;
-	}
-.fondo{
-	background-image: url(images/dollmakerfondo.png);
+}
+
+.header-txt h1{
+	font-size:50 px;
+	line-height: 1.2;
+	text-transform: uppercase;
+	color: #000000;
+	background-color: #F7B3C0;
+	display: block;
+
+}
+
+p {
+	font-size: 18px;
+	color: #FFF9BB;
+	margin-bottom: 25 px;
+
+}
+h3{
+	color: #F7B3C0;
+}
+.btn-1{
+	display:inline-block;
+	padding: 10px 25px;
+	color: #FFFFFF;
+	background-color: #95AB7C;
+	text-transform: uppercase;
+	border-radius: 25 px;
+	font-size: 16px;
+}
+
+.btn-1:hover{
+	background-color: #D5EDB9;
+}
+
+.header-img {
+	flex-basis: 50%;
+}
+
+.services {
+	padding: 80px 0;
+	text-align: center;
+}
+
+h2{
+	color:#1B1B1D;
+	font-size:40px;
+}
+.a: Descripción {
+	background-color: #FFFFFF;
+}
+.inicio{
+	background-image: url("imagen borrosa.png");
 	background-size: cover;
-	background-attachment: fixed; 
-	background-position: center;
-	}
-	.cuerpo{
-	background-color: rgba(0,0,10,0.5)  /*color de fondo de sección*/;
-	padding: 1%;
-	margin-left: 10%;
-	margin-right: 10%;
-	}
-	.preguntas {
-	font-family: Dollmaker;
-	color: black;
-	font-size: 30px;
-	margin-left: auto;
-	text-align: center;
-	margin-right: auto;
-	margin-bottom: 3%;
-	background: #edb158 /*color de fondo de preguntas*/;
-	width: 50%;
-	border: 2px solid #edb158 /*color de fondo de preguntas*/;
-	border-radius: 5px;
-	padding: 2px;
-	}
-	.respuestas{
-		
-	font-family: sans-serif ;
-	color: black;
-	font-size: 24px;
-	text-align: center;
-	background: #f5d58c /*color de fondo de contenido*/;
-	width: 100%;
-	padding: 0px;
-	}
-@media (max-width: 1200px){
-	.Metas{
-	width: 750px;
-	padding: 40px;
-	}
-	.hist{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	}
-	.gen{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	}
-	.gamep{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	}
 }
-@media (max-width: 600px){
-	.title{
-	margin-bottom: 10;
-	font-size: 40px;
-	}
-	.content{
-	height:85vh;	
-	}
+
+body{
+	background-color: #FBF3D6;
 }
-@media (min-width: 850px){
-video {
-    width: 750px;
-    height: auto;
+
+.in-flex{
+	flex:1;
+	padding: 25px;
 }
+
+.in-flex:first-child{
+	flex:2;
+}
+
+.in-flex div{
+	padding: 22px;
+}
+.in-flex2{
+	flex: 2;
+}
+
+.footer{
+	background-color:#1A1633 ;
 }
