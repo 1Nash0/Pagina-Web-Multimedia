@@ -127,7 +127,9 @@ body {
 .parents h1 {
     font-size: 0.9em;
 }
-
+.parents h2 {
+    font-size: 0.9em;
+}
 .parents p {
     margin: 10px 0;
     font-size: 0.9em;
