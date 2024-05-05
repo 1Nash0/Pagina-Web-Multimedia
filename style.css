@@ -1,23 +1,28 @@
 /*primero quitamos las cosas que vienen por defecto*/
 
-* {
-margin: 10px;
-padding:0;
-box-sizing: border-box;
-text-decoration: none;
-
+*{
+	margin: 0;
+	padding: 5px 5px;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
 }
-
+body{
+	background-color: #e1c084;
+	text-align: center;
+	font-family: sans-serif;
+}
 .home{
 	display:flex;
 }
-img{
-	max-width: 100%;
+.img1{
+	max-width: 90%;
+	height: auto;
 }
 
 .container {
-	max-witdh: 1200px;
-	margin: 10 px auto;
+
+	margin: 10px auto;
 
 }
 
@@ -27,34 +32,34 @@ img{
 }
 
 .menu{
-	display: flex ;
+
 	justify-content: space-between;
 	align-items: center ;
 	padding: 20px 0;
 	background-color: #1A1633;
+	  position: relative;
+  display:  flex;
 
 }
 
 .logo{
-	margin:-10px;
+	margin-left: 50px;
 	color: #FBE8A5;
-	font-size: 25px;
+	margin-top: 35px;
+	margin-bottom: 40px;
+	font-size: 45px;
 	font-weight: 800;
-	text-transform:uppercase;
-	background-image: ;
-}
+	text-transform: uppercase;
 
 
 }
-.menu {
-  position: relative;
-  display: inline-block;
-}
+
 
 .menu-btn {
+margin-right: 100px;
   background-color: #FBE8A5;
-  color: white;
-  padding: 10px 20px;
+  color: black;
+  padding: 18px 30px;
   border: none;
   cursor: pointer;
 }
@@ -62,7 +67,7 @@ img{
 .menu-items {
   position: absolute;
   list-style-type: none;
-  padding: 0;
+  padding: 20px;
   margin: 0;
   background-color: #1A1633;
   display: none;
@@ -97,6 +102,7 @@ img{
   .menu-btn {
     display: block;
   }
+
   
   .menu-items {
     position: static;
@@ -120,7 +126,7 @@ img{
 }
 
 .menu-icono{
-	width: 25 px;	
+	width: 25px;	
 }
 
 .menu label{
@@ -129,7 +135,7 @@ cursor: pointer;
 
 .header-content{
 	display: flex;
-	justify-content:space- between;
+	justify-content:space-between;
 	text-align: center;
 	padding: 80px 0;
 }
@@ -137,11 +143,13 @@ cursor: pointer;
 .header-txt {
 	flex-basis:0%;
 	padding-right: 80px;
-
+	padding-left: 70px;
+	padding-top: 80px;
+	padding-bottom: 10px;
 }
 
 .header-txt h1{
-	font-size:50 px;
+	font-size:50px;
 	line-height: 1.2;
 	text-transform: uppercase;
 	color: #000000;
@@ -153,7 +161,7 @@ cursor: pointer;
 p {
 	font-size: 18px;
 	color: #FFF9BB;
-	margin-bottom: 25 px;
+	margin-bottom: 25px;
 
 }
 h3{
@@ -165,7 +173,7 @@ h3{
 	color: #FFFFFF;
 	background-color: #95AB7C;
 	text-transform: uppercase;
-	border-radius: 25 px;
+	border-radius: 25px;
 	font-size: 16px;
 }
 
@@ -186,17 +194,16 @@ h2{
 	color:#1B1B1D;
 	font-size:40px;
 }
-.a: Descripción {
-	background-color: #FFFFFF;
-}
+
 .inicio{
-	background-image: url("imagen borrosa.png");
+	background-image: url("Images/imagen borrosa.png");
 	background-size: cover;
+	background-attachment: fixed; 
+	background-position: center;
+
 }
 
-body{
-	background-color: #FBF3D6;
-}
+
 
 .in-flex{
 	flex:1;
@@ -216,4 +223,339 @@ body{
 
 .footer{
 	background-color:#1A1633 ;
+}
+.title{
+	margin-top: 35px;
+	margin-bottom: 40px;
+	font-size: 45px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #12374c;
+}
+.subtitle{
+	font-family: Dollmaker;
+	margin-top: 25px;
+	margin-bottom: 35px;
+	font-size: 35px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #006666;
+}
+p{
+	font-family: Dollmaker;
+	margin-bottom: 35px;
+	font-size: 17px;
+	padding: 0 25px;
+}
+.content2{
+
+	height: 35vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.intro{
+		padding: 30px;
+	background: #998fcc;
+	 border: 3px dotted blue;
+	 border-bottom: 0;
+}
+.historia{
+	padding: 30px;
+	background: #99ffcc;
+	 border: 3px dotted blue;
+	 border-bottom: 0;
+}
+.genero{
+	padding: 30px;
+	background: #99ffe6;
+	border: 3px dotted blue;
+	border-bottom: 0;
+	border-top: 0;
+}
+.gameplay{
+	padding: 30px;
+	background: #99b3ff;
+	border: 3px dotted blue;
+	border-top: 0;
+}
+.Meta1{
+	background: #99ffcc;	
+}
+.Meta2{	
+	background: #99ffe6;	
+}
+.Meta3{	
+	background: #99b3ff;	
+}
+.contenedor{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.descripción{
+	width: 85%;
+	height: auto;
+}
+.hist{
+	display: flex;
+	flex-direction: row;
+}
+.gen{
+	display: flex;
+	flex-direction: row;
+}
+.gamep{
+	display: flex;
+	flex-direction: row;
+}
+.Metas {	
+	position: sticky;  
+    height: 120vh;
+    padding-bottom: 20px;
+    padding-top: 60px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+
+img {
+    width: 80%;
+    height: auto;
+	}
+video {
+    width: 90%;
+    height: auto;
+	}
+.FAQ{
+
+	background-image: url("Images/dollmakerfondo.png");
+	background-size: cover;
+	background-attachment: fixed; 
+	background-position: center;
+	}
+	.cuerpo{
+	background-color: rgba(0,0,10,0.5)  /*color de fondo de sección*/;
+	padding: 1%;
+	margin-left: 10%;
+	margin-right: 10%;
+	}
+	.preguntas {
+	font-family: Dollmaker;
+	color: black;
+	font-size: 30px;
+	margin-left: auto;
+	text-align: center;
+	margin-right: auto;
+	margin-bottom: 3%;
+	background: #edb158 /*color de fondo de preguntas*/;
+	width: 50%;
+	border: 2px solid #edb158 /*color de fondo de preguntas*/;
+	border-radius: 5px;
+	padding: 2px;
+	}
+	.respuestas{
+
+	font-family: sans-serif ;
+	color: black;
+	font-size: 24px;
+	text-align: center;
+	background: #f5d58c /*color de fondo de contenido*/;
+	width: 100%;
+	padding: 0px;
+	}
+	.containerp {
+    background: #fff;
+    padding: 20px;
+    font-family: monospace;
+    width: 500px;
+    box-shadow: 0 0 5px #000;
+}
+
+.text {
+    margin: 10px 0;
+    font-family: sans-serif;
+    font-size: 0.9em;
+}
+
+.commentbox {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.commentbox > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* float: left; */
+    margin-right: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+.comentarios{
+	position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f2f2f2;
+}
+.contentp {
+    width: 100%;
+}
+
+.user {
+    border: none;
+    outline: none;
+    margin: 5px 0;
+    color: #808080;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.commentinput > input {
+    border: none;
+    padding: 10px;
+    padding-left: 0;
+    outline: none;
+    border-bottom: 2px solid blue;
+    margin-bottom: 10px;
+    width: 95%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #808080;
+}
+
+.buttons > button {
+    padding: 5px 10px;
+    background: lightgrey;
+    color: #808080;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.buttons > button.abled {
+    background: blue;
+    color: #fff;
+}
+
+.policy {
+    margin: 20px 0;
+    font-size: 0.8em;
+    font-family: Arial, sans-serif;
+    color: #808080;
+}
+
+.policy a {
+    text-decoration: none;
+    color: blue;
+}
+
+.notify {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.notify > input {
+    margin-right: 5px;
+    border: 2px solid #808080;
+}
+
+.parents {
+    font-family: Arial, sans-serif;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.parents h1 {
+    font-size: 0.9em;
+}
+
+.parents p {
+    margin: 10px 0;
+    font-size: 0.9em;
+}
+
+.parents > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.engagements {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.engagements img {
+    width: 20px;
+
+}
+
+.engagements img:nth-child(1) {
+    margin-right: 10px;
+    width: 25px;
+}
+
+.date {
+    color: #808080;
+    font-size: 0.8em;
+}
+
+@media (max-width: 1200px){
+	.Metas{
+	width: 750px;
+	padding: 40px;
+	}
+	.hist{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	}
+	.gen{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	}
+	.gamep{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	}
+
+
+}
+	
+
+@media (max-width: 600px){
+	.title{
+	margin-bottom: 10;
+	font-size: 40px;
+	}
+	.content{
+	height:85vh;	
+	}
+}
+@media (min-width: 850px){
+video {
+    width: 750px;
+    height: auto;
 }
