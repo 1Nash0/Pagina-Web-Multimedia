@@ -333,7 +333,7 @@ img {
 	flex-wrap: wrap;
 }
 .descripción{
-	width: 85%;
+	width: 80%;
 	height: auto;
 }
 .Description{
@@ -342,8 +342,8 @@ img {
 	font-size: 24px;
 	text-align: center;
 	width: 100%;
-	padding: 10px;
-	padding-top: 70px;
+	padding: 20px;
+	
 }
 .hist{
 	display: flex;
