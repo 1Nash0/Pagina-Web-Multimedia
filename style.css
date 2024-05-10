@@ -57,13 +57,10 @@ header {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	font-family: Dollmaker;
-	font-size: 65px;
-	font-weight: 800;
-	text-transform: uppercase;
+	font-size: 60px;
+	font-weight: 700;
 	align-items: center;
 	text-shadow: 2px 2px 8px #ffcccc;
-
-
 }
 
 
@@ -562,7 +559,15 @@ h4 {
 @media (max-width: 1200px){
 	.Metas{
 		width: 750px;
-		padding: 40px;
+		overflow-y: hidden;
+		height: 100%;
+	}
+	.header-content{
+			display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+
 	}
 	.hist{
 		display: flex;
@@ -591,7 +596,6 @@ h4 {
 		display: block;
 	}
 
-
 	.menu-items {
 		position: static;
 		display: none;
@@ -606,17 +610,21 @@ h4 {
 	.menu:hover .menu-items {
 		display: block;
 	}
-}
-
-@media (max-width: 600px){
 	.title{
 		margin-bottom: 10;
 		font-size: 40px;
 	}
 	.content{
-		height:85vh;	
+		height:120vh;	
+	}
+	.Metas{
+		height: 155vh;
+		width: 30vh;
+		overflow-y:none;
 	}
 }
+
+
 @media (min-width: 850px){
 	video {
 		width: 750px;
