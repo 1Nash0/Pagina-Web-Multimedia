@@ -43,12 +43,12 @@ header {
 .menu{
 
 	justify-content: space-between;
-	align-items: center ;
-	padding: 20px 0;
+	align-items: center;
+	padding: 10px 0;
 	background-color: #1A1633;
 	position: relative;
 	display:  flex;
-
+	flex-wrap: wrap;
 }
 
 .logo{
@@ -68,9 +68,10 @@ header {
 	margin-right: 100px;
 	background-color: #FBE8A5;
 	color: black;
+	font-size: 20px;
 	padding: 18px 30px;
-	border: none;
 	cursor: pointer;
+	box-shadow:2px 2px 8px #ffcccc;
 }
 
 .menu-items {
@@ -190,22 +191,6 @@ h2{
 	background-position: center;
 }
 
-.in-flex{
-	flex:1;
-	padding: 25px;
-}
-
-.in-flex:first-child{
-	flex:2;
-}
-
-.in-flex div{
-	padding: 22px;
-}
-.in-flex2{
-	flex: 2;
-}
-
 .footer{
 	background-color:#1A1633 ;
 }
@@ -223,9 +208,10 @@ h2{
 	margin-top: 20px;
 	margin-bottom: 15px;
 	font-size: 35px;
-	font-weight: 700;
+	font-weight: 750;
 	text-transform: uppercase;
 	color: #006666;
+	text-shadow: 2px 2px 8px #edb158;
 }
 
 img {
@@ -234,6 +220,7 @@ img {
 	filter: drop-shadow(0px 2px 10px black);
 	max-width: 400px;
 	max-height: 250px;
+	padding: 5px;
 }
 .content2{
 	display: flex;
@@ -314,6 +301,8 @@ img {
 	opacity: 0.97;
 	margin-top: 3%;
 	border-radius: 5px;
+	padding: 2px;
+	margin:2%;
 }
 .tier {
 	font-family: Dollmaker;
@@ -365,7 +354,11 @@ img {
 video {
 	width: 90%;
 	height: auto;
+	margin: 20px;
 	filter: drop-shadow(0px 2px 10px black);
+}
+audio{
+	margin: 20px;
 }
 .FAQ{
 
@@ -410,9 +403,10 @@ video {
 	padding: 20px;
 	font-family: monospace;
 	width: 500px;
+	margin-bottom: 3%;
 	box-shadow: 0 0 5px #000;
-	margin-top: 3%;
-}
+	margin-left: 20px;
+	}
 
 .text {
 	margin: 10px 0;
@@ -588,7 +582,13 @@ h4 {
 		justify-content: space-around;
 		flex-wrap: wrap;
 	}
-
+	.logo{
+		margin-left: 10px;
+	}
+	.menu-btn {
+		margin-left: 150px;
+		margin-top: 10px;
+}
 
 }
 
